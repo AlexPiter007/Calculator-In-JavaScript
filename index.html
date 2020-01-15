@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calc</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container calc p-2">
+        <div class="wrapper p-3">
+            <div class="container">
+            <input type="text" class="textview mb-3">
+            <div class="clearfix"></div>
+            </div>
+            <div class="container"><tr>
+                <td><input  type="button" class="btn m-1 btn-danger" value="C" onclick="c()"></td>
+                <td><input  type="button" class="btn m-1 btn-primary" value="<" onclick="back()"></td>
+                <td><input  type="button" class="btn m-1 btn-warning" value="/" onclick="insert('/')"></td>
+                <td><input  type="button" class="btn m-1 btn-warning" value="*" onclick="insert('*')"></td>
+            </tr> 
+            </div>
+            <div class="container">
+            <tr> 
+                <td><input  type="button" class="btn m-1 btn-warning" value="1" onclick="insert(1)"></td>
+                <td><input  type="button" class="btn m-1 btn-warning" value="2" onclick="insert(2)"></td>
+                <td><input  type="button" class="btn m-1 btn-warning" value="3" onclick="insert(3)"></td>
+                <td><input  type="button" class="btn m-1 btn-warning" value="+" onclick="insert('+')"></td>
+            </tr> 
+            </div>
+            <div class="container">
+            <tr> 
+                <td><input  type="button" class="btn m-1 btn-warning" value="4" onclick="insert(4)"></td>
+                <td><input  type="button" class="btn m-1 btn-warning" value="5" onclick="insert(5)"></td>
+                <td><input  type="button" class="btn m-1 btn-warning" value="6" onclick="insert(6)"></td>
+                <td><input  type="button" class="btn m-1 btn-warning" value="-" onclick="insert('-')"></td>
+            </tr> 
+            </div>
+            <div class="container">
+            <tr> 
+                <td><input  type="button" class="btn m-1 btn-warning" value="7" onclick="insert(7)"></td>
+                <td><input  type="button" class="btn m-1 btn-warning" value="8" onclick="insert(8)"></td>
+                <td><input  type="button" class="btn m-1 btn-warning" value="9" onclick="insert(9)"></td>
+                <td><input  type="button" class="btn m-1 btn-warning" value="=" onclick="eq()"></td>
+            </tr>
+            </div>
+            <div class="container">
+            <tr>
+                <td><input width=245  type="button" class="btn m-1 btn-warning" value="0" onclick="insert(0)"></td>
+                <td><input width=245 type="button" class="btn m-1 btn-warning" value="." onclick="insert('.')"></td>
+            </tr>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+</html>
